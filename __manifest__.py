@@ -6,14 +6,16 @@
     'author': 'Maniha',
     'category': 'Services',
     'sequence': -101,
-    'depends': ['base', 'mail'],
+    'depends': ['base', 'mail', 'contacts'],
     'data': [
     'security/ir.model.access.csv',
     "data/library_demo.xml",
     "data/library_member_demo.xml",
+    "data/demo.xml",
     'views/books_view.xml',
     'views/authors_view.xml',
     'views/members_view.xml',
+    'views/book_loan_view.xml',
     'views/menu.xml',
     ],
 

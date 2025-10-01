@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="member_john" model="library.member">
+        <field name="name">John Doe</field>
+        <field name="email">john@example.com</field>
+        <field name="membership_date">2024-01-01</field>
+    </record>
+
+    <record id="member_sarah" model="library.member">
+        <field name="name">Sarah Smith</field>
+        <field name="email">sarah@example.com</field>
+        <field name="membership_date">2024-02-15</field>
+    </record>
+
+    <record id="book_hp1" model="library.book">
+        <field name="name">Harry Potter and the Philosopher's Stone</field>
+        <field name="isbn">9780747532699</field>
+        <field name="total_copies">5</field>
+        <field name="available_copies">5</field>
+    </record>
+
+    <record id="book_hp2" model="library.book">
+        <field name="name">Harry Potter and the Chamber of Secrets</field>
+        <field name="isbn">9780747538493</field>
+        <field name="total_copies">3</field>
+        <field name="available_copies">3</field>
+    </record>
+
+    <record id="loan_john_book1" model="library.book.loan">
+        <field name="member_id" ref="om_library.member_john"/>
+        <field name="book_id" ref="om_library.book_hp1"/>
+        <field name="loan_date">2025-09-01</field>
+    </record>
+
+    <record id="loan_sarah_book2" model="library.book.loan">
+        <field name="member_id" ref="om_library.member_sarah"/>
+        <field name="book_id" ref="om_library.book_hp2"/>
+        <field name="loan_date">2025-09-10</field>
+    </record>
+
+</odoo>

@@ -14,3 +14,4 @@ class LibraryMember(models.Model):
         ('gold', 'Gold'),
         ('platinum', 'Platinum')
     ], string="Membership Type", default='basic')
+    membership_date = fields.Date(string="Membership Date")

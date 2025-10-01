@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <!-- Demo Members -->
     <record id="library_member_john" model="library.member">
         <field name="name">John Smith</field>
         <field name="email">john.smith@example.com</field>
