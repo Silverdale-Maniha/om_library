@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <!-- Demo Members -->
+    <record id="library_member_john" model="library.member">
+        <field name="name">John Smith</field>
+        <field name="email">john.smith@example.com</field>
+        <field name="phone">+1234567890</field>
+        <field name="membership_type">basic</field>
+        <field name="membership_start">2025-01-01</field>
+        <field name="membership_end">2025-12-31</field>
+    </record>
+
+    <record id="library_member_sara" model="library.member">
+        <field name="name">Sara Khan</field>
+        <field name="email">sara.khan@example.com</field>
+        <field name="phone">+923001234567</field>
+        <field name="membership_type">gold</field>
+        <field name="membership_start">2025-02-01</field>
+        <field name="membership_end">2026-01-31</field>
+    </record>
+
+    <record id="library_member_alex" model="library.member">
+        <field name="name">Alex Johnson</field>
+        <field name="email">alex.johnson@example.com</field>
+        <field name="phone">+441234567890</field>
+        <field name="membership_type">platinum</field>
+        <field name="membership_start">2025-03-15</field>
+        <field name="membership_end">2026-03-14</field>
+    </record>
+</odoo>

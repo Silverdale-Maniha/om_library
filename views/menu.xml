@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_library_root"
+              name="Library"
+              sequence="-1"/>
+
+    <menuitem id="menu_library_catalog"
+              name="Catalog"
+              parent="menu_library_root"
+              sequence="1"/>
+
+    <menuitem id="menu_library_books"
+              name="Books"
+              parent="menu_library_catalog"
+              action="action_library_book"
+              sequence="1"/>
+
+    <menuitem id="menu_library_authors"
+          name="Authors"
+          parent="menu_library_catalog"
+          action="action_library_author"
+          sequence="2"/>
+
+    <menuitem id="menu_library_members"
+          name="Members"
+          parent="menu_library_root"
+          action="action_library_member"/>
+
+
+</odoo>

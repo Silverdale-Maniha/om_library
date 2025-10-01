@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <record id="author_jk_rowling" model="library.author">
+        <field name="name">J.K. Rowling</field>
+        <field name="biography">British author, best known for the Harry Potter series.</field>
+        <field name="birth_date">1965-07-31</field>
+    </record>
+
+    <record id="author_tolkein" model="library.author">
+        <field name="name">J.R.R. Tolkien</field>
+        <field name="biography">English writer, poet, and academic, author of The Lord of the Rings.</field>
+        <field name="birth_date">1892-01-03</field>
+    </record>
+
+    <record id="author_george_orwell" model="library.author">
+        <field name="name">George Orwell</field>
+        <field name="biography">English novelist and essayist, known for Animal Farm and 1984.</field>
+        <field name="birth_date">1903-06-25</field>
+    </record>
+
+    <record id="book_hp_stone" model="library.book">
+        <field name="name">Harry Potter and the Philosopher's Stone</field>
+        <field name="isbn">9780747532699</field>
+        <field name="total_copies">10</field>
+        <field name="available_copies">7</field>
+        <field name="author_id" ref="author_jk_rowling"/>
+    </record>
+
+    <record id="book_hp_chamber" model="library.book">
+        <field name="name">Harry Potter and the Chamber of Secrets</field>
+        <field name="isbn">9780747538493</field>
+        <field name="total_copies">8</field>
+        <field name="available_copies">5</field>
+        <field name="author_id" ref="author_jk_rowling"/>
+    </record>
+
+    <record id="book_lotr" model="library.book">
+        <field name="name">The Lord of the Rings</field>
+        <field name="isbn">9780261102385</field>
+        <field name="total_copies">12</field>
+        <field name="available_copies">9</field>
+        <field name="author_id" ref="author_tolkein"/>
+    </record>
+
+    <record id="book_1984" model="library.book">
+        <field name="name">1984</field>
+        <field name="isbn">9780451524935</field>
+        <field name="total_copies">6</field>
+        <field name="available_copies">3</field>
+        <field name="author_id" ref="author_george_orwell"/>
+    </record>
+
+    <record id="book_animal_farm" model="library.book">
+        <field name="name">Animal Farm</field>
+        <field name="isbn">9780451526342</field>
+        <field name="total_copies">5</field>
+        <field name="available_copies">4</field>
+        <field name="author_id" ref="author_george_orwell"/>
+    </record>
+</odoo>
