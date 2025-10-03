@@ -16,6 +16,7 @@
     'views/authors_view.xml',
     'views/members_view.xml',
     'views/book_loan_view.xml',
+    'views/genres_view.xml',
     'views/menu.xml',
     ],
 

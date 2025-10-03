@@ -26,5 +26,16 @@
           parent="menu_library_root"
           action="action_library_member"/>
 
+    <menuitem id="menu_library_loans"
+              name="Book Loans"
+              parent="menu_library_root"
+              action="action_library_book_loan"
+              sequence="30"/>
+
+    <menuitem id="menu_library_genre"
+              name="Genres"
+              parent="menu_library_root"
+              action="action_library_genre"
+              sequence="5"/>
 
 </odoo>

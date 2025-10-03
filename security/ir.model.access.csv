@@ -4,3 +4,4 @@ access_library_author,access.library.author,model_library_author,,1,1,1,1
 access_library_member_user,access.library.member.user,model_library_member,base.group_user,1,1,1,1
 access_library_book_loan_user,access.library.book.loan.user,model_library_book_loan,base.group_user,1,1,1,1
 access_library_book_loan_manager,access.library.book.loan.manager,model_library_book_loan,base.group_system,1,1,1,1
+access_library_genre,access.library.genre,model_library_genre,base.group_system,1,1,1,1

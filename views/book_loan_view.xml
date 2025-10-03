@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <odoo>
-    <record id="action_library_book_loan" model="ir.actions.act_window">
-        <field name="name">Book Loans</field>
-        <field name="res_model">library.book.loan</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem id="menu_library_loans"
-              name="Book Loans"
-              parent="menu_library_root"
-              action="action_library_book_loan"
-              sequence="30"/>
 
     <record id="view_library_book_loan_tree" model="ir.ui.view">
         <field name="name">library.book.loan.tree</field>
@@ -49,4 +38,11 @@
             </form>
         </field>
     </record>
+
+      <record id="action_library_book_loan" model="ir.actions.act_window">
+        <field name="name">Book Loans</field>
+        <field name="res_model">library.book.loan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
 </odoo>

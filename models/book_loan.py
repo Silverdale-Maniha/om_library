@@ -4,7 +4,7 @@ from datetime import date
 class LibraryBookLoan(models.Model):
     _name = "library.book.loan"
     _description = "Library Book Loan"
-    _inherit = ['mail.thread', 'mail.activity.mixin']  # optional, for chatter tracking
+    _inherit = ['mail.thread', 'mail.activity.mixin']
 
     member_id = fields.Many2one('library.member', string="Member", required=True)
     book_id = fields.Many2one('library.book', string="Book", required=True)
